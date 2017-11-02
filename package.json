@@ -1,0 +1,32 @@
+{
+  "name": "google-tokens",
+  "version": "0.0.1",
+  "description": "tool for generating google OAuth tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradoyler/google-tokens.git"
+  },
+  "keywords": [
+    "google",
+    "oauth",
+    "OAuth2",
+    "tokens",
+    "googleapis"
+  ],
+  "author": "Brad Oyler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradoyler/google-tokens/issues"
+  },
+  "homepage": "https://github.com/bradoyler/google-tokens#readme",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "googleapis": "^22.2.0"
+  }
+}
