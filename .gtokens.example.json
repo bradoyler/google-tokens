@@ -1,0 +1,9 @@
+{
+  "web": {
+    "client_id":"--client_id (required)--",
+    "client_secret":"--client_secret (required)--",
+    "oAuthTokens":{
+      "refresh_token":"(populate after running google-tokens)"
+    },
+  }
+}

@@ -1,9 +1,10 @@
 {
   "name": "google-tokens",
   "version": "0.0.1",
-  "description": "tool for generating google OAuth tokens",
+  "description": "Tool for generating google OAuth tokens",
   "main": "index.js",
   "scripts": {
+    "start": "node test",
     "test": "node test"
   },
   "repository": {
@@ -24,9 +25,13 @@
   },
   "homepage": "https://github.com/bradoyler/google-tokens#readme",
   "devDependencies": {
-    "standard": "^10.0.3"
+    "eslint": "4.19.1",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-node": "6.0.1"
   },
   "dependencies": {
-    "googleapis": "^22.2.0"
+    "googleapis": "31.0.2",
+    "opn": "5.3.0",
+    "server-destroy": "1.0.1"
   }
 }
