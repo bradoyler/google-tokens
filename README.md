@@ -14,11 +14,14 @@ Tool for getting Google Cloud API OAuth tokens (refresh token)
 ## API
 ```javascript
 const GoogleTokens = require('google-tokens')
-const tokens = new GoogleTokens({ client_id, client_secret, redirect_uris }) // from cloud API credentials file 
+const tokens = new GoogleTokens({ client_id, client_secret }) // OAuth credentials 
 
-const scopes = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/drive.readonly']
+const scope = [
+  'https://www.googleapis.com/auth/drive',
+  'https://www.googleapis.com/auth/drive.readonly'
+]
 
-tokens.authenticate({ scope: scopes }) // required to pass API scope
+tokens.authPrompt({ scope }) // required to pass API scope
   .then(tokens => console.log('OAuthTokens:', tokens))
   .catch(console.error)
 ```
@@ -26,13 +29,13 @@ tokens.authenticate({ scope: scopes }) // required to pass API scope
 ##### NOTE: you will only get a `refresh_token` the first-time you authenticate, but you can force to get new tokens by using the 'prompt' option, like so:
 
 ```javascript
-tokens.authenticate({ scope: scopes, prompt: 'consent' })
+tokens.authPrompt({ scope, prompt: 'consent' })
   .then(tokens => console.log('OAuthTokens:', tokens))
-``` 
+```
 
 ----
 
 #### TODOs:
 - add CLI support
-- allow for using shortnames (ie. `auth/drive` ) in scopes
+- allow for using shortnames (ie. `auth/drive` ) in scope
 - tests for all options 
