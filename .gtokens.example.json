@@ -4,6 +4,6 @@
     "client_secret":"--client_secret (required)--",
     "oAuthTokens":{
       "refresh_token":"(populate after running google-tokens)"
-    },
+    }
   }
 }
