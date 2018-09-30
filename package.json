@@ -1,6 +1,6 @@
 {
   "name": "google-tokens",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tool for generating google OAuth tokens",
   "main": "index.js",
   "scripts": {
