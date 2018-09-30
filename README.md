@@ -11,6 +11,17 @@ Tool for getting Google Cloud API OAuth tokens (refresh token)
 1. Create an API project with an OAuth client id and add a '**Authorized redirect URI**' of `http://localhost:3000/callback`.
 1. Obtain your `client_id` & `client_secret` from the credentials JSON file from the [console](https://console.developers.google.com/apis/credentials)
 
+### Steps to generate `.gtokens.json`
+1. `git clone https://github.com/bradoyler/google-tokens.git`
+1. copy .gtokens.example.json to .gtokens.json
+1. fill in `client_id` and `client_secret`
+1. install & run
+```
+npm install
+npm start
+``` 
+5. login and copy `refresh_token` to your '.gtokens.json'
+
 ## API
 ```javascript
 const GoogleTokens = require('google-tokens')

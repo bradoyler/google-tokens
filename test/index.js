@@ -12,5 +12,5 @@ const scope = [
 ]
 
 tokens.authPrompt({ scope })
-  .then(res => console.log('OAuth2 creds:', res))
+  .then(res => console.log('credentials >>', res.credentials))
   .catch(console.error)
