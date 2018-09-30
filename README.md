@@ -20,7 +20,7 @@ Tool for getting Google Cloud API OAuth tokens (refresh token)
 npm install
 npm start
 ``` 
-5. login and copy `refresh_token` to your '.gtokens.json'
+5. follow prompt and copy `refresh_token` to your '.gtokens.json'
 
 ## API
 ```javascript
