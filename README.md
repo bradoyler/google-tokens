@@ -37,11 +37,17 @@ tokens.authPrompt({ scope }) // required to pass API scope
   .catch(console.error)
 ```
 
-##### NOTE: you will only get a `refresh_token` the first-time you authenticate, but you can force to get new tokens by using the 'prompt' option, like so:
+#### NOTE: you will only get a `refresh_token` the first-time you authenticate, but you can force to get new tokens by using the 'prompt' option, like so:
 
 ```javascript
 tokens.authPrompt({ scope, prompt: 'consent' })
   .then(tokens => console.log('OAuthTokens:', tokens))
+```
+
+Or you can run:
+
+```sh
+npm run refresh
 ```
 
 ----

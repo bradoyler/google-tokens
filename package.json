@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node test",
+    "refresh": "node test --refresh",
     "test": "node test"
   },
   "repository": {

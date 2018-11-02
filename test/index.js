@@ -11,6 +11,8 @@ const scope = [
   'https://www.googleapis.com/auth/drive.readonly'
 ]
 
-tokens.authPrompt({ scope })
+const prompt = (process.argv[2] ==='--refresh') ? 'consent' : '';
+
+tokens.authPrompt({ scope, prompt })
   .then(res => console.log('credentials >>', res.credentials))
   .catch(console.error)
