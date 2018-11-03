@@ -7,9 +7,11 @@ Tool for getting Google Cloud API OAuth tokens (refresh token)
 - [OAuth2 for Web Server Applications](https://developers.google.com/identity/protocols/OAuth2WebServer)
 
 ### Getting started
-1. Sign-up for a [Google Cloud API](https://console.developer.google.com/) account.
-1. Create an API project with an OAuth client id and add a '**Authorized redirect URI**' of `http://localhost:3000/callback`.
-1. Obtain your `client_id` & `client_secret` from the credentials JSON file from the [console](https://console.developers.google.com/apis/credentials)
+1. Sign-up for a [Google Cloud API](https://console.developer.google.com/) account and create an API project. 
+1. [Create credentials](https://console.developers.google.com/apis/credentials) (OAuth client id) and add a '**Authorized redirect URI**' of `http://localhost:3000/callback`.
+1. Obtain your `client_id` & `client_secret` for usage in next step  
+Also...  
+[See detailed instructions on how to create credentials](https://docs.google.com/document/d/1U0yc8okKCHqfo5KSeRCbLz0g6kmzDyTePicowXF4Ql4/edit?usp=sharing)
 
 ### Steps to generate `.gtokens.json`
 1. `git clone https://github.com/bradoyler/google-tokens.git`
